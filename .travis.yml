@@ -7,5 +7,4 @@ arch:
  - arm64
 
 script:
- - sbt package -isSnapshot:true -version:e466364
- - sbt all
+ - sbt package -isSnapshot=true -version=e466364
