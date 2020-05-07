@@ -2,8 +2,10 @@ language: scala
 dist: bionic
 
 scala: 2.12.11
+arch:
+ - x64
+ - arm64
 
 script:
- - sbt build
- - sbt test
  - sbt package -isSnapshot:true -version:e466364
+ - sbt all
